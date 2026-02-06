@@ -1,0 +1,72 @@
+#########
+#
+# Azure vTAP Demo — Jekyll Configuration
+# Theme: workshop-template-b by evanwill
+# https://github.com/evanwill/workshop-template-b
+#
+#########
+
+#######
+# SITE SETTINGS
+#
+# title appears in the header
+title: Azure vTAP 실습 가이드
+# title-icon appears in the header to give some pizazz
+# choose from Bootstrap Icons: https://icons.getbootstrap.com/
+title-icon: hdd-network
+# description, keywords, and image for meta tags (SEO)
+description: "Azure Virtual Network TAP(vTAP)을 사용한 패킷 미러링 구성 및 Wireshark 분석 실습"
+keywords: "Azure, vTAP, Networking, Packet Mirroring, Wireshark, Bicep, 패킷 미러링"
+# featured-image is added to metadata tags for social media sharing
+featured-image: ""
+# add search box to footer? true/false
+search: true
+
+# author settings for cc-by, appears in the footer and credits
+author: studydev
+# your github username for link [optional]
+github_username: studydev
+# year or date published
+pub_year: 2026
+# location of code, the full url to your github repository
+source-code: https://github.com/nexus-blog/azure-vtap-demo/
+
+##########
+# URL VARIABLES [optional!!]
+#
+# When using GitHub Pages just leave these blank!
+# url: for the domain, e.g. https://username.github.io
+# baseurl: / followed by repo name, e.g. /azure-vtap-demo
+url:
+baseurl:
+
+##########
+# REMOTE THEME
+#
+remote_theme: evanwill/workshop-template-b
+
+#######
+# BUILD SETTINGS [usually leave as is]
+#
+# Plugins
+plugins:
+  - jekyll-remote-theme
+
+# Defaults to simplify front matter
+defaults:
+  - scope:
+      path: "content"
+    values:
+      layout: "section"
+
+# ignore stuff
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - infra/
+  - assets/lib/README.md
+
+# Build settings
+markdown: kramdown

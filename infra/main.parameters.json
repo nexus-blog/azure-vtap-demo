@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "koreacentral"
+    },
+    "adminUsername": {
+      "value": "azureuser"
+    },
+    "adminSshPublicKey": {
+      "value": "<YOUR_SSH_PUBLIC_KEY>"
+    },
+    "collectorAdminUsername": {
+      "value": "azureuser"
+    },
+    "collectorAdminPassword": {
+      "value": "<YOUR_COLLECTOR_VM_PASSWORD>"
+    }
+  }
+}
